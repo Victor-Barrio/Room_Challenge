@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Room homepage</title>
+
+  <!-- Linking my CSS and JS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/script.js"></script>
+
+  <!-- Importing Google Font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+  </style>
+
+</head>
+
+<body>
+  <header class="header">
+    <!-- Burger Menu Button -->
+    <button class="header__burger-btn">
+      <img src="./images/icon-hamburger.svg" alt="Three white lines icon" width="30" height="30"
+        class="header__burger-btn-icon">
+    </button>
+
+    <!-- Logo -->
+    <img src="./images/logo.svg" alt="Logo of the website that is write room in white font" width="100" height="30"
+      class="header__logo">
+
+    <!-- Navigation -->
+    <nav class="header__nav">
+      <!-- Close Button -->
+      <button class="header__close-btn">
+        <img src="./images/icon-close.svg" alt="Image of an X representing the close button" width="30" height="30"
+          class="header__close-btn-icon">
+      </button>
+
+      <!-- Navigation List -->
+      <ul class="header__nav-list">
+        <li class="header__nav-list-item">
+          <a href="#" class="header__nav-list-link">home</a>
+        </li>
+        <li class="header__nav-list-item">
+          <a href="#" class="header__nav-list-link">shop</a>
+        </li>
+        <li class="header__nav-list-item">
+          <a href="#" class="header__nav-list-link">about</a>
+        </li>
+        <li class="header__nav-list-item">
+          <a href="#" class="header__nav-list-link">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Carrusel section -->
+    <section class="carrusel">
+
+      <!-- Image of the carrusel -->
+      <img src="./images/desktop-image-hero-1.jpg" alt="Image of chairs and a table with a bonsai in the middle"
+        width="100" height="150" class="carrusel__image-imgActive">
+
+      <!-- Ankle for the buttons -->
+      <div class="carrusel__ankle">
+        <!-- Buttons that move the carrusel -->
+        <div class="carrusel__buttons">
+          <button class="carrusel__button-prev" aria-label="Previous slide">
+            <img src="./images/icon-angle-left.svg" alt="Image of an angle pointing left" width="30" height="30"
+              class="carrusel__button-prevIcon">
+          </button>
+
+          <button class="carrusel__button-next" aria-label="Next slide">
+            <img src="./images/icon-angle-right.svg" alt="Image of an angle pointing right" width="30" height="30"
+              class="carrusel__button-nextIcon">
+          </button>
+        </div>
+      </div>
+
+      <!-- Text of the carrusel -->
+      <div class="carrusel__text">
+        <h1 class="carrusel__text-title">Discover innovative ways to decorate</h1>
+
+        <p class="carrusel__text-description">
+          We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine
+          form and function in bringing your vision to life. Create a room in your own style with our collection and
+          make your property a reflection of you and what you love.
+        </p>
+
+        <!-- Button of Shop Now-->
+        <button class="carrusel__button-shop">
+          SHOP NOW
+          <img src="./images/icon-arrow.svg" alt="Icon of an arrow pointing right" width="40" height="20"
+            class="carrusel__button-shop-icon">
+        </button>
+      </div>
+    </section>
+
+    <!-- The fixed section of the page-->
+    <section class="about">
+      <img src="./images/image-about-dark.jpg"
+        alt="Image of a room in darknes with a iluminate table and black forniture" width="100" height="50"
+        class="about__image-dark">
+
+      <div class="about__text">
+        <h2 class="about__text-title">ABOUT OUR FURNITURE</h2>
+
+        <p class="about__text-description">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+
+      <img src="./images/image-about-light.jpg" alt="Bright room with a chair" width="100" height="50"
+        class="about__image-light">
+    </section>
+  </main>
+</body>
+
+</html>
